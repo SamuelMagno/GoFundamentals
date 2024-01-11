@@ -13,9 +13,9 @@ func inc2(n *int) {
 func main() {
 	n := 1
 
-	inc1(n) //value
+	inc1(n) //passando valor de n, não incrementa N original
 	fmt.Println(n)
 
-	inc2(&n) //reference
+	inc2(&n) //passando referência de n, incrementa N original
 	fmt.Println(n)
 }
